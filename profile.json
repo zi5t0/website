@@ -1,0 +1,36 @@
+{
+    "name": "Christian",
+    "lastname": "Román Romano",
+    "birthdate": "03/05/1996",
+    "profile_img": "https://media-exp1.licdn.com/dms/image/C4D03AQEkH55wwE65zg/profile-displayphoto-shrink_400_400/0/1617632062720?e=1668643200&v=beta&t=DaBTEUNQOoGUvDlcn21uavbGy3qbH4rQ8a473g1F14I",
+    "experience": [
+        {
+        "company": "C2 Soluciones",
+        "start_date": "01/03/2017",
+        "end_date": "01/05/2022",
+        "role": "Full Stack Developer",
+        "jobs": "Encargado de desarrollar diferentes proyectos tanto Back como Front"
+        },
+        {
+        "company": "Wolfcrass",
+        "start_date": "01/03/2017",
+        "end_date": "01/03/2018",
+        "role": "CTO & Full Stack Developer",
+        "jobs": "Encargado de toda el area tecnológica de la empresa"
+        }
+    ],
+    "studies": [
+        {
+        "center": "IES Fco Romero Vargas",
+        "title_name": "Técnico Superior en Administración de Sistemas en Red",
+        "start_date": "sept. 2015",
+        "end_date": "jun. 2017"
+        },
+        {
+        "center": "IES Doñana",
+        "title_name": "Técnico en Sistemas Microinformáticos y Redes",
+        "start_date": "sept. 2012",
+        "end_date": "may. 2014"
+        }
+    ]
+}
