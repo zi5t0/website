@@ -1,5 +1,5 @@
 name: Deploy via SSH
-on: [workflow_dispatch]
+on: [push]
 jobs:
   deploy:
     name: Deploy
