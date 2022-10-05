@@ -1,21 +1,15 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - main
+name: Deploy via SSH
+on: [workflow_dispatch]
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: appleboy/ssh-action@master
-      - name: Deploy via SSH
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            cd /var/www/crromano.com && git pull
-    env:
-      SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
-      SERVER_IP: ${{secrets.SERVER_IP}}
-      CI: false
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          cd /var/www/crromano.com && git pull
