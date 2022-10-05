@@ -11469,3 +11469,21 @@ header.masthead h1, header.masthead .h1 {
 .ml-10 {
   margin-left: 20px;
 }
+
+.copyright {
+  float: left !important;
+}
+
+.social-links {
+  float: right !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .copyright {
+    float: none !important;
+  }
+  .social-links {
+    float: none !important;
+    margin-top: 20px;
+  }
+}
