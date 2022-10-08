@@ -11299,10 +11299,10 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
-.page-section#about {
+.page-section#about, .page-section#separator {
   padding: 2rem 0;
 }
 
@@ -11486,4 +11486,156 @@ header.masthead h1, header.masthead .h1 {
     float: none !important;
     margin-top: 30px;
   }
+}
+
+
+/* RESUME STYLES */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+#resume {
+  background-color: cornsilk;
+}
+
+.resume {
+  width: 960px;
+  color: #000;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+
+.resume ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume h3 {
+  color: #f46239;
+  font-size: 1.25em;
+}
+
+.resume .func {
+  width: 100%;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.resume .func .work small {
+  display: block;
+  opacity: 0.7;
+}
+
+.resume .func .work ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+
+.resume .func .work ul li:hover::before {
+  -webkit-animation: circle 1.2s infinite;
+          animation: circle 1.2s infinite;
+}
+
+.resume .func .work ul li:hover span {
+  color: #fdd835;
+}
+
+@-webkit-keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #fdd835;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #fdd835;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+.resume .func .work ul li:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: 1px;
+}
+
+.resume .func .work ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.resume .func .work ul li:last-of-type::after {
+  border-radius: 1.5px;
+}
+
+.resume .func .work ul li::before,
+.resume .func .work ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.resume .func .work ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid #f4623a;
+  background: #fff;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+
+.resume .func .work ul li::after {
+  width: 3px;
+  height: 100%;
+  background: #f4623a;
+  left: 5px;
+  top: 0;
+}
+
+.resume .func .work ul li span {
+  transition-duration: 0.3s;
+}
+
+.resume .func .work {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+}
+
+.resume .func .work * {
+  margin: auto;
+}
+
+.resume .func .title {
+  text-align: center;
 }
