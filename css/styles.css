@@ -228,7 +228,7 @@ a {
   color: #f4623a;
   text-decoration: underline;
 }
-a:hover {
+a:hover, small.business-name {
   color: #c34e2e;
 }
 
@@ -7314,6 +7314,14 @@ textarea.form-control-lg {
   margin-top: 3rem !important;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -11510,7 +11518,6 @@ a {
 }
 
 .resume {
-  width: 960px;
   color: #000;
   margin: 0 auto;
   position: relative;
@@ -11552,7 +11559,7 @@ a {
 }
 
 .resume .func .work ul li:hover span {
-  color: #fdd835;
+  color: #525357;
 }
 
 @-webkit-keyframes circle {
