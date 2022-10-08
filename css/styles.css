@@ -11464,7 +11464,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .social-links {
-  float: right !important;
+  float: right;
 }
 
 @media only screen and (max-width: 600px) {
@@ -11473,7 +11473,8 @@ header.masthead h1, header.masthead .h1 {
   }
   .social-links {
     float: none !important;
-    margin-top: 30px;
+    width: fit-content;
+    margin: 30px auto;
   }
 }
 
@@ -11501,7 +11502,6 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
-  display: block;
   transition-duration: 0.3s;
 }
 
