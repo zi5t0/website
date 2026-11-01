@@ -3,9 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Christian Román | Full Stack Developer</title>
+        <meta name="description" content="Christian Román is a Software Engineer specialized in Angular, full stack web applications, backend systems, JavaScript, Python, Django, AWS and CI/CD." />
+        <meta name="author" content="Christian Román" />
+        <meta name="theme-color" content="#f4623a" />
+        <meta property="og:title" content="Christian Román | Software Engineer" />
+        <meta property="og:description" content="Software Engineer specialized in Angular, full stack web applications and custom software." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="assets/img/bg-masthead.webp" />
+        <title>Christian Román | Software Engineer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -25,10 +30,12 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume" data-i18n="nav.experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav.skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+                        <li class="nav-item language-switcher"><label for="languageSelect" class="visually-hidden" data-i18n="language.label">Language</label><select id="languageSelect" aria-label="Language"><option value="en">🇬🇧</option><option value="es">🇪🇸</option></select></li>
                     </ul>
                 </div>
             </div>
@@ -38,13 +45,17 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Christian Román</h1>
-                        <h1 class="text-white font-weight-bold">Full Stack Developer</h1>
+                        <p class="hero-eyebrow text-white-75" data-i18n="hero.eyebrow">Hi, I’m Christian Román</p>
+                        <h1 class="text-white font-weight-bold" data-i18n="hero.title">Software Engineer</h1>
+                        <p class="hero-specialty text-white-75" data-i18n="hero.specialty">Full Stack Development · Backend · Cloud &amp; DevOps</p>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">I build web pages, web applications, mobile applications and all kinds of custom software</p>
-                        <a class="btn btn-primary btn-xl" href="#resume">Find Out More</a>
+                        <p class="text-white-75 mb-5" data-i18n="hero.description">I build reliable web applications and custom software with Python, Django, JavaScript and AWS.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary btn-xl" href="#portfolio" data-i18n="hero.work">View my work</a>
+                            <a class="btn btn-outline-light btn-xl" href="pdf/Christian_Roman_CV_EN.pdf" download data-cv-link data-i18n="hero.cv">Download CV</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +65,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-center mt-0">Resume</h2>
+                        <h2 class="text-center mt-0" data-i18n="experience.title">Experience</h2>
                         <hr class="divider" />
                     </div>
                 </div>
@@ -62,32 +73,44 @@
                 <div class="resume">
                     <div class="func">
                       <div class="title">
-                        <h3><i class="fa fa-briefcase"></i>Take a look at my career path</h3>      
+                        <h3><i class="fa fa-briefcase"></i><span data-i18n="experience.subtitle">Professional experience</span></h3>
                       </div>
                       <div class="work">
                         <ul>
                             <li>
-                                <span>Full Stack Developer</span>
-                                <small>Development of features and bugs fixing in bank sector</small>
-                                <small class="business-name">IBM</small>
-                                <small>Oct 2021 - Now</small></li>
+                                <span data-i18n="experience.viewnext.role">Senior Frontend Engineer</span>
+                                <small data-i18n="experience.viewnext.text">Led frontend architecture decisions and Angular 14–20 migrations for enterprise banking applications, advancing microfrontend modernization.</small>
+                                <small class="business-name">VIEWNEXT</small>
+                                <small data-i18n="experience.viewnext.date">May 2024 - Present</small></li>
                             <li>
-                                <span>Programmer Analyst</span>
-                                <small>I took the requirements of the clients, designed the solution, executed and develop the whole product.</small>
+                                <span data-i18n="experience.hotelbeds.role">Senior Frontend Engineer</span>
+                                <small data-i18n="experience.hotelbeds.text">Built and optimized high-traffic hotel search, filtering and booking experiences using Angular, supporting thousands of concurrent users.</small>
+                                <small class="business-name">Dimática / Hotelbeds</small>
+                                <small data-i18n="experience.hotelbeds.date">Jun 2023 - May 2024</small>
+                            </li>
+                            <li>
+                                <span data-i18n="experience.metrica.role">Full-Stack Engineer</span>
+                                <small data-i18n="experience.metrica.text">Delivered enterprise banking features with Angular and Symfony, including APIs, third-party integrations and automated testing.</small>
+                                <small class="business-name">Métrica Consulting</small>
+                                <small data-i18n="experience.metrica.date">Oct 2021 - Jul 2023</small>
+                            </li>
+                            <li>
+                                <span data-i18n="experience.trm.role">Full-Stack Engineer</span>
+                                <small data-i18n="experience.trm.text">Architected and delivered ERP and comparison platforms end to end, owning system design, databases, infrastructure, CI/CD and key technical decisions.</small>
                                 <small class="business-name">TRM Software</small>
-                                <small>Mar 2021 - Oct 2021</small>
+                                <small data-i18n="experience.trm.date">Mar 2021 - Oct 2021</small>
                             </li>
                             <li>
-                                <span>Full Stack Developer</span>
-                                <small>Attendant of developing different projects both Back and Front side</small>
+                                <span data-i18n="experience.c2.role">Full-Stack Developer</span>
+                                <small data-i18n="experience.c2.text">Built web and mobile products for major brands, including real-time applications, indoor positioning and high-traffic e-commerce; designed APIs and authentication.</small>
                                 <small class="business-name">C2 Intelligent Solutions</small>
-                                <small>May 2018 - Mar 2021</small>
+                                <small data-i18n="experience.c2.date">May 2018 - Mar 2021</small>
                             </li>
                             <li>
-                                <span>CTO & Full Stack Developer</span>
-                                <small>Attendant to develop an important part of 3 projects (Django) both the Back and the Front and to carry the CI and the CD of both on AWS servers</small>
+                                <span data-i18n="experience.wolfcrass.role">Full-Stack Engineer / DevOps</span>
+                                <small data-i18n="experience.wolfcrass.text">Built Django-based web and commerce applications, mobile apps and managed AWS infrastructure, CI/CD and deployments from scratch.</small>
                                 <small class="business-name">Wolfcrass Software Solutions</small>
-                                <small>Mar 2017 - May 2018</small>
+                                <small data-i18n="experience.wolfcrass.date">Mar 2017 - May 2018</small>
                             </li>
                         </ul>
                       </div>
@@ -96,7 +119,7 @@
 
                 <div class="download-cv row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center mt-30">
                     <div class="col-lg-8 align-self-baseline"> 
-                        <a class="btn btn-primary btn-xl mt-20" href="/pdf/christian_roman_en_cv.pdf">Download CV</a>
+                        <a class="btn btn-primary btn-xl mt-20" href="pdf/Christian_Roman_CV_EN.pdf" download data-cv-link data-i18n="experience.cv">Download my CV</a>
                     </div>
                 </div>
             </div>
@@ -106,39 +129,39 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-center mt-0">Services</h2>
+                        <h2 class="text-center mt-0" data-i18n="skills.title">Skills &amp; expertise</h2>
                         <hr class="divider" />
-                        <p class="mb-0">I am part of a multidisciplinary team capable of adapting to the needs of any type of business.</p>
-                        <p class="mb-4">Together we add more than 15 years of experience in software development and systems administration.</p>
+                        <p class="mb-0" data-i18n="skills.intro">I help teams design, build and maintain useful digital products.</p>
+                        <p class="mb-4" data-i18n="skills.intro2">My experience covers product development, backend systems, cloud infrastructure and delivery.</p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Webpage Design</h3>
-                            <p class="text-muted mb-0">Do you need a website in wordpress or from scratch? We take care</p>
+                            <h3 class="h4 mb-2" data-i18n="skills.web.title">Web Development</h3>
+                            <p class="text-muted mb-0" data-i18n="skills.web.text">Responsive, accessible websites and web applications built from the ground up.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Custom development</h3>
-                            <p class="text-muted mb-0">From a mobile app to any type of custom software, we build it for you.</p>
+                            <h3 class="h4 mb-2" data-i18n="skills.backend.title">Backend &amp; APIs</h3>
+                            <p class="text-muted mb-0" data-i18n="skills.backend.text">Robust services and integrations with Python, Django, databases and REST APIs.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Branding</h3>
-                            <p class="text-muted mb-0">Advice and design of logo and brand image.</p>
+                            <h3 class="h4 mb-2" data-i18n="skills.cloud.title">Cloud &amp; DevOps</h3>
+                            <p class="text-muted mb-0" data-i18n="skills.cloud.text">AWS deployments, Docker, CI/CD pipelines and practical infrastructure automation.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Corporate emails</h3>
-                            <p class="text-muted mb-0">We migrate or create your mailboxes and make sure your data is safe.</p>
+                            <h3 class="h4 mb-2" data-i18n="skills.tech.title">Technologies</h3>
+                            <p class="text-muted mb-0" data-i18n="skills.tech.text">Python, Django, JavaScript, SQL, AWS, Docker, Git and modern frontend tools.</p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +172,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Take a look at some of my projects!</h2>
+                        <h2 class="text-white mt-0" data-i18n="portfolio.title">Selected work</h2>
                     </div>
                 </div>
             </div>
@@ -160,54 +183,54 @@
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.webp" title="Acupunturaparalasalud">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/1.webp" alt="Acupuntura para la Salud website" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Webpage</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.website">Website</div>
                                 <div class="project-name">Acupunturaparalasalud</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.webp" title="HGR Performance">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/2.webp" alt="HGR Performance website" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Webpage</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.website">Website</div>
                                 <div class="project-name">HGR Performance</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.webp" title="CSL98">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/3.webp" alt="CSL98 website" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Webpage</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.website">Website</div>
                                 <div class="project-name">CSL98</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.webp" title="Catalinobarbershop">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/4.webp" alt="Catalino Barbershop website" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Webpage</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.website">Website</div>
                                 <div class="project-name">Catalinobarbershop</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.webp" title="Espinosachiptuning">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/5.webp" alt="Espinosa Chiptuning website" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Webpage</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.website">Website</div>
                                 <div class="project-name">Espinosachiptuning</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.webp" title="Brokadiz">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.webp" alt="..." />
+                            <img class="img-fluid" loading="lazy" src="assets/img/portfolio/thumbnails/6.webp" alt="Brokadiz web application" />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">WebAPP</div>
+                                <div class="project-category text-white-50" data-i18n="portfolio.webapp">Web application</div>
                                 <div class="project-name">Brokadiz</div>
                             </div>
                         </a>
@@ -220,43 +243,44 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <h2 class="mt-0" data-i18n="contact.title">Let’s work together</h2>
                         <hr class="divider" />
-                        <p class="text-muted mb-5">Ready to start your next project with me? Send me a message and I will get back to you as soon as possible!</p>
+                        <p class="text-muted mb-5" data-i18n="contact.intro">Have a project, an opportunity or a technical challenge in mind? Send me a message and I’ll get back to you soon.</p>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">    
-                        <form id="contactForm" action="https://submit-form.com/B42Jg2jw" method="POST">
+                        <form id="contactForm" action="https://submit-form.com/kguM7GEG" method="POST">
                             <!-- Redirect -->
-                            <input type="hidden" name="_redirect" value="crromano.com"/>
+                            <input type="hidden" name="_redirect" value="https://crromano.com/"/>
 
                             <!-- Name address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." />
-                                <label for="name">Full name</label>
+                                <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." data-i18n-placeholder="contact.namePlaceholder" required />
+                                <label for="name" data-i18n="contact.name">Full name</label>
                             </div>
                             
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" />
-                                <label for="email">Email address</label>
+                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-i18n-placeholder="contact.emailPlaceholder" required />
+                                <label for="email" data-i18n="contact.email">Email address</label>
                             </div>
 
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" name="phone" placeholder="(123) 456-7890" />
-                                <label for="phone">Phone number</label>
+                                <input class="form-control" id="phone" type="tel" name="phone" placeholder="(123) 456-7890" data-i18n-placeholder="contact.phonePlaceholder" />
+                                <label for="phone" data-i18n="contact.phone">Phone number</label>
                             </div>
 
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" name="message" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." data-i18n-placeholder="contact.messagePlaceholder" style="height: 10rem" required></textarea>
+                                <label for="message" data-i18n="contact.message">Message</label>
                             </div> 
                             <div class="d-grid">
-                                <button class="btn btn-primary btn-xl" type="submit">Send</button>
+                                <button class="btn btn-primary btn-xl" type="submit" data-i18n="contact.send">Send message</button>
                             </div>
+                            <p class="form-note" data-i18n="contact.note">Your details will only be used to reply to your message.</p>
                           </form>
                     </div>
                 </div>
@@ -265,16 +289,17 @@
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted copyright">Copyright &copy; 2022 - Christian Román</div>
+                <div class="small text-center text-muted copyright">&copy; 2026 Christian Román</div>
                 <div class="small text-center text-muted social-links">
-                  <a href="https://www.linkedin.com/in/christian-rom%C3%A1n-romano-031298151/"><img alt="Linkdin Icon" class="social-icon" src="assets/img/social-icons/in.webp"></a>
-                  <a class="ml-10" href="https://github.com/zi5t0"><img alt="Github Icon" class="social-icon" src="assets/img/social-icons/gh.webp"></a>
-                  <a class="ml-10" href="https://www.instagram.com/croman96/"><img alt="Instagram Icon" class="social-icon" src="assets/img/social-icons/ig.webp"></a>
+                  <a href="https://www.linkedin.com/in/crromano/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img alt="LinkedIn icon" class="social-icon" loading="lazy" src="assets/img/social-icons/in.webp"></a>
+                  <a class="ml-10" href="https://github.com/zi5t0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img alt="GitHub icon" class="social-icon" loading="lazy" src="assets/img/social-icons/gh.webp"></a>
+                  <a class="ml-10" href="https://www.instagram.com/croman96/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img alt="Instagram icon" class="social-icon" loading="lazy" src="assets/img/social-icons/ig.webp"></a>
                 </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="js/i18n.js"></script>
         <script src="js/scripts.js"></script> 
     </body>
     <!-- /BODY -->
